@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Shadows+Into+Light&display=swap");
+button {
+  display: none;
+}
+
+.search-form {
+  display: flex;
+  align-self: center;
+  background-color: #1F1F1F;
+  padding: 0.69rem 2.7rem;
+  border-radius: 12px;
+}
+.search-form .search-icon {
+  margin-right: 1.3rem;
+}
+.search-form input {
+  border: none;
+  background: transparent;
+  font-size: 1.125rem;
+}
+.search-form input::-moz-placeholder {
+  font-size: 1.125rem;
+}
+.search-form input:-ms-input-placeholder {
+  font-size: 1.125rem;
+}
+.search-form input::placeholder {
+  font-size: 1.125rem;
+}
+.search-form input:focus {
+  outline: none;
+  padding: 0 0.9rem;
+}/*# sourceMappingURL=SearchField.css.map */

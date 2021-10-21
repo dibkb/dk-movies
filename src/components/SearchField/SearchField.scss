@@ -1,0 +1,29 @@
+@import '../../styles/basic.scss';
+button{
+   display: none;
+}
+.search-form{
+   display: flex;
+   align-self: center;
+   background-color: $form-bg;
+   padding: .69rem 2.7rem;
+   border-radius: 12px;
+   .search-icon{
+      margin-right: 1.3rem;
+   }
+   input{
+      // outline: none;
+      // appearance: none;
+      border: none;
+      background: transparent;
+      font-size: 1.125rem;
+      &::placeholder{
+         font-size: 1.125rem;
+      }
+      &:focus{
+         outline: none;
+         padding: 0 .9rem;
+      }
+   }
+
+}

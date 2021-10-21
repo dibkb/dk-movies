@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Shadows+Into+Light&display=swap");
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.125rem;
+  margin-left: 12px;
+}
+
+.right-side .home-link {
+  color: #fff;
+  font-size: 1.125rem;
+}
+.right-side .home-link:hover {
+  transform: scale(1.04);
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,28 @@
+@import "../../styles/basic.scss";
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+}
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+.brand {
+//   font-family: $font-brand;
+  font-size: 1.125rem;
+  margin-left: 12px;
+}
+.right-side {
+  .home-link {
+    color: #fff;
+    font-size: 1.125rem;
+   //  font-weight: 500;
+    &:hover {
+      // color: #dec79d;
+      transform: scale(1.04);
+    }
+  }
+}
