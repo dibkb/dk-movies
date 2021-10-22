@@ -1,0 +1,32 @@
+.movie-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: transparent;
+  max-width: 100%;
+  height: 420px;
+  cursor: pointer;
+}
+.movie-item .image-poster {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #fff;
+}
+.movie-item .movie-details {
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.movie-item .title {
+  max-width: 100%;
+}
+.movie-item .poster-image {
+  justify-self: start;
+  height: 420px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid #fff;
+}
+.movie-item:hover {
+  transform: scale(1.09);
+}/*# sourceMappingURL=MovieItem.css.map */

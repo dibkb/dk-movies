@@ -1,21 +1,17 @@
-import React, { useEffect } from "react";
-import movieApi from "../../api/movieApi";
+import React from "react";
+import MovieItem from "../MovieItem/MovieItem";
+import { useSelector} from "react-redux";
 import "./MovieContainer.scss";
-const apiKey = "6e6f66eb";
 const MovieContainer = () => {
-  const search = "Harry";
-  useEffect(() => {
-    const fetchMovies = async () => {
-      const response = await movieApi
-        .get(`?s=${search}&apikey=${apiKey}`)
-        .catch((err) => {
-          console.log("error", err);
-        });
-      console.log(response.data);
-    };
-    fetchMovies();
-  }, []);
-  return <div className="movie-container"></div>;
+  const allMovies = useSelector((state) => state.searchMovies.movies);
+  console.log(allMovies);
+  return (
+    <div className="movie-container">
+      {allMovies.map((movie) => {
+        return <MovieItem key={movie.imdbID} {...movie} />;
+      })}
+    </div>
+  );
 };
 
 export default MovieContainer;

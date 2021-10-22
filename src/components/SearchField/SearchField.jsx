@@ -1,14 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ResultError from "../ResultError/ResultError";
+import { useDispatch } from "react-redux";
+import { fetchMovies } from "../../features/fetchMovies";
+import { addMovies } from "../../features/MovieSlice";
 import { BsSearch } from "react-icons/bs";
 import "./SearchField.scss";
 const SearchField = () => {
   let iconStyles = { background: "transparent", fontSize: "1.3rem" };
-  const [search, setSearch] = useState("");
+  // initialize dispatch
+  const dispatch = useDispatch();
+  const [search, setSearch] = useState("Hero");
   const searchHandler = (e) => {
     e.preventDefault();
-    console.log(search);
-    setSearch('')
+    setSearch("");
   };
+  useEffect(() => {
+    const delayDebounceFn = setTimeout(() => {
+      console.log(search);
+      // Send Axios request here
+      fetchMovies(search).then(
+        (response) =>
+        {
+          response.Response === "True" && dispatch(addMovies(response.Search))
+          // response.Response === "False" && <ResultError result = {search}/>
+        }
+      );
+    }, 690);
+    return () => clearTimeout(delayDebounceFn)
+  }, [search]);
   return (
     <form className="search-form" onSubmit={searchHandler}>
       <BsSearch style={iconStyles} className="search-icon" />
