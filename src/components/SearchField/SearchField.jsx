@@ -23,7 +23,7 @@ const SearchField = () => {
         // else if (response.Response === "False")
         //   return <ResultError result={search} />;
       });
-    }, 690);
+    }, 369);
     return () => clearTimeout(delayDebounceFn);
   }, [search,dispatch]);
   return (
