@@ -15,7 +15,7 @@ const Favourites = () => {
   };
   useEffect(() => {
 
-  }, [favMovies,useSelector]);
+  }, [favMovies]);
   if (favMovies){
     
   }

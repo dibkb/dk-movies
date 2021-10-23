@@ -28,9 +28,6 @@ export const MoviePage = (props) => {
       dispatch(addFavMovies(response))
     );
   };
-  {
-    movie && console.log(movie);
-  }
   if (movie) {
     return (
       <div className="movie-page-container">
