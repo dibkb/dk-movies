@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { GiSharpedTeethSkull } from "react-icons/gi";
+import { GiDaemonSkull } from "react-icons/gi";
 import { AiFillHeart } from "react-icons/ai";
 import "./Navbar.scss";
 import SearchField from "../SearchField/SearchField";
@@ -8,12 +8,13 @@ const Navbar = () => {
   let iconStyles = {
     background: "transparent",
     fontSize: "2rem",
-    color: "#DEC79D",
+    // color: "#fff",
+    color: "#B61010",
   };
   return (
     <div className="navbar-container">
       <Link to="/" className="brand-container">
-        <GiSharpedTeethSkull style={iconStyles} />
+        <GiDaemonSkull style={iconStyles} />
         <span className="brand">DK movies</span>
       </Link>
       <div className="search-container">
