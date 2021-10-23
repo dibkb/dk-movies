@@ -12,11 +12,13 @@
 }
 .brand {
 //   font-family: $font-brand;
+  color: #fff;
   font-size: 1.125rem;
   margin-left: 12px;
 }
 .right-side {
-  .home-link {
+  display: flex;
+  .home-link,.fav-link {
     color: #fff;
     font-size: 1.125rem;
    //  font-weight: 500;
@@ -24,5 +26,15 @@
       // color: #dec79d;
       transform: scale(1.04);
     }
+  }
+  .home-link{
+    margin-right: 2rem;
+  }
+  .fav-link{
+    span{
+      margin-left: .3rem;
+    }
+    display: flex;
+    align-items: center;
   }
 }

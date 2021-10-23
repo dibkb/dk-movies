@@ -4,7 +4,7 @@ import { useSelector} from "react-redux";
 import "./MovieContainer.scss";
 const MovieContainer = () => {
   const allMovies = useSelector((state) => state.searchMovies.movies);
-  console.log(allMovies);
+  // console.log(allMovies);
   return (
     <div className="movie-container">
       {allMovies.map((movie) => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ResultError from "../ResultError/ResultError";
+// import ResultError from "../ResultError/ResultError";
 import { useDispatch } from "react-redux";
 import { fetchMovies } from "../../features/fetchMovies";
 import { addMovies } from "../../features/MovieSlice";
@@ -18,16 +18,14 @@ const SearchField = () => {
     const delayDebounceFn = setTimeout(() => {
       console.log(search);
       // Send Axios request here
-      fetchMovies(search).then(
-        (response) =>
-        {
-          response.Response === "True" && dispatch(addMovies(response.Search))
-          // response.Response === "False" && <ResultError result = {search}/>
-        }
-      );
+      fetchMovies(search).then((response) => {
+        if (response.Response === "True") dispatch(addMovies(response.Search));
+        // else if (response.Response === "False")
+        //   return <ResultError result={search} />;
+      });
     }, 690);
-    return () => clearTimeout(delayDebounceFn)
-  }, [search]);
+    return () => clearTimeout(delayDebounceFn);
+  }, [search,dispatch]);
   return (
     <form className="search-form" onSubmit={searchHandler}>
       <BsSearch style={iconStyles} className="search-icon" />

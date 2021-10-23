@@ -1,0 +1,59 @@
+$text-grey: #8a8a8a;
+.movie-page-container {
+  margin-top: 16px;
+  display: flex;
+  .movie-poster {
+    margin-right: 2rem;
+    img {
+      border: 1px solid #fff;
+    }
+  }
+  .movie-info {
+    .title {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .other-info {
+       margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      span {
+        color: $text-grey;
+      }
+    }
+    .director,
+    .actors,
+    .plot {
+       margin-top: 1rem;
+       color: #fff;
+      span {
+        color: $text-grey;
+      }
+    }
+    .plot span{
+       line-height: 36px;
+    }
+    .addtofav-btn {
+      margin: 2rem 0;
+      display: flex;
+      align-items: center;
+      border: none;
+      padding: 0.6rem 1.8rem;
+      font-size: 18px;
+      background-color: #fff;
+      cursor: pointer;
+      border-radius: 9px;
+      &:hover{
+         transform: scale(1.06);
+      }
+      & span{
+         margin-left: 6px;
+      }
+      & > *{
+         background: transparent;
+      }
+    }
+  }
+}

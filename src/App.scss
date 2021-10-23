@@ -3,12 +3,12 @@
 
 *,*::after,*::before{
   background-color: $background-dark;
-  color: #fff;
+  // color: #fff;
   font-family: $font-primary;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.21s linear;
 }
 .container{
   margin: 0 auto;

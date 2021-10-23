@@ -10,6 +10,7 @@ button{
    border-radius: 12px;
    .search-icon{
       margin-right: 1.3rem;
+      color: #fff;
    }
    input{
       // outline: none;
@@ -17,6 +18,7 @@ button{
       border: none;
       background: transparent;
       font-size: 1.125rem;
+      color: #fff;
       &::placeholder{
          font-size: 1.125rem;
       }

@@ -1,0 +1,31 @@
+$text-grey: #8a8a8a;
+
+.imdb-rating {
+   margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  & > * {
+    margin-right: 1.2rem;
+  }
+  .imdbLogo {
+    object-fit: contain;
+    max-width: 4rem;
+  }
+}
+.rating-star-container {
+  & > * {
+    margin-right: 4px;
+  }
+}
+.rating-vote {
+   align-self: center;
+  .rating {
+    color: #fff;
+    margin-right: 4px;
+  }
+  .votes {
+    color: $text-grey;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+}

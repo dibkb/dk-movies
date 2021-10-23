@@ -1,0 +1,19 @@
+.favourite-section {
+  color: #fff;
+  margin: 2rem 0;
+  display: grid;
+  column-gap: 24px;
+  row-gap: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, calc(25% - 24px)));
+  .fav-movie-item {
+    color: #fff;
+  }
+  .remove-fav-btn{
+    margin-top: 1.8rem;
+     display: block;
+     color: #fff;
+     border: none;
+     font-size: 16px;
+     cursor: pointer;
+   }
+}

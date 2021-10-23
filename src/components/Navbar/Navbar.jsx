@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { GiSharpedTeethSkull } from "react-icons/gi";
+import { AiFillHeart } from "react-icons/ai";
 import "./Navbar.scss";
 import SearchField from "../SearchField/SearchField";
 const Navbar = () => {
@@ -21,6 +22,10 @@ const Navbar = () => {
       <div className="right-side">
         <Link to="/" className="home-link">
           Home
+        </Link>
+        <Link to="/favourites" className="fav-link">
+          <AiFillHeart color="#B61010" size={24} />
+          <span className="favourite">Favourites</span>
         </Link>
       </div>
     </div>
