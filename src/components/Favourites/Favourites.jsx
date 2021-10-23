@@ -16,6 +16,9 @@ const Favourites = () => {
   useEffect(() => {
 
   }, [favMovies,useSelector]);
+  if (favMovies){
+    
+  }
   return (
     <div className="favourite-section">
       {favMovies.map((movie) => {
