@@ -18,7 +18,24 @@ $text-grey: #8a8a8a;
       margin-top: 1rem;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       color: #fff;
+      @media (max-width: 600px){
+        flex-wrap: wrap;
+        align-items: flex-start;
+        & > *{
+          flex-basis: 50%;
+          margin-top: 1rem;
+        }
+        .line{
+          display: none;
+        }
+      }
+      .line{
+        border-left: 1px solid #ffff;
+        height: 28px;
+      }
+
       span {
         color: $text-grey;
       }

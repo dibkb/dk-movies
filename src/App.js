@@ -10,9 +10,9 @@ function App() {
       <div className="container">
         <Navbar />
         <Switch>
-          <Route path="/" component={MovieContainer} exact/>
+          <Route path="/" component={MovieContainer} exact />
           <Route path="/movie/:imdbID" component={MoviePage} />
-          <Route path="/favourites" component= {Favourites} />
+          <Route path="/favourites" component={Favourites} />
         </Switch>
       </div>
     </Router>

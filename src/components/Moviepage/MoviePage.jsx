@@ -42,8 +42,11 @@ export const MoviePage = (props) => {
           </div>
           <section className="other-info">
             {movie.Year && <span>{movie.Year}</span>}
+            <div className="line"></div>
             {movie.Genre && <span>{movie.Genre}</span>}
+            <div className="line"></div>
             {movie.Rated && <span>{movie.Rated}</span>}
+            <div className="line"></div>
             {movie.Runtime && <span>{movie.Runtime}</span>}
           </section>
           <div className="director">

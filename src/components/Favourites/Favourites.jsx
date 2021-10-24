@@ -1,5 +1,5 @@
 import React, {useEffect } from "react";
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import MovieItem from "../MovieItem/MovieItem";
 // import { AiOutlineHeart } from "react-icons/ai";
 import { removeFavMovie } from "../../features/FavouriteSlice";
@@ -7,18 +7,14 @@ import { removeFavMovie } from "../../features/FavouriteSlice";
 import "./Favourites.scss";
 const Favourites = () => {
   const dispatch = useDispatch();
-  // const [favMovies,setFavMovies] = useState([]);
   const favMovies = useSelector((state) => state.favMovies.movies);
   const favRemoveHandler = (e) => {
     dispatch(removeFavMovie(e.target.value));
-    // console.log(e.target.value);
   };
-  useEffect(() => {
+useEffect(() => {
 
-  }, [favMovies]);
-  if (favMovies){
-    
-  }
+}, [favMovies])
+
   return (
     <div className="favourite-section">
       {favMovies.map((movie) => {
