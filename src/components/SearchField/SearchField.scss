@@ -9,8 +9,18 @@ button{
    padding: .69rem 2.7rem;
    border-radius: 12px;
    @media (max-width: 575.98px){
+      
+      display: flex;
+      align-self: center;
       width: 100%;
-      padding: .69rem 1rem;
+      padding: .69rem ;
+      & input{
+         max-width: 80%;
+      }
+      & .search-icon,.cancel-icon{
+         min-width: 20px;
+      }
+   
    }
    .search-icon{
       margin-right: 1.3rem;

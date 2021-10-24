@@ -44,6 +44,7 @@ const SearchField = () => {
       />
       {typing && search !== "" && (
         <FiX
+        className = 'cancel-icon'
           style={iconStyles}
           color="#fff"
           onClick={() => setSearch("")}

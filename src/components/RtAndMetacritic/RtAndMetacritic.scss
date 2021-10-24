@@ -1,40 +1,45 @@
-.rt-metacritic-container{
-   margin-top: 1rem;
-   display: flex;
-   color: #fff;
-   & > *{
-      margin-right: 24px;
-   }
-   .rt-container,.metacritic-container{
-      display: flex;
-      align-items: center;
-      & > *{
-         margin-right: 12px;
-      }
-   }
-   .rt-container img{
-      object-fit: contain;
-      max-width: 83px;
-   }
-   .metacritic-container img{
-      object-fit: contain;
-      max-width: 42px;
-   }
+.rt-metacritic-container {
+  margin-top: 1rem;
+  display: flex;
+  color: #fff;
+  & > * {
+    margin-right: 24px;
+  }
+  .rt-container,
+  .metacritic-container {
+    display: flex;
+    align-items: center;
+    & > * {
+      margin-right: 12px;
+    }
+  }
+  .rt-container img {
+    object-fit: contain;
+    max-width: 83px;
+  }
+  .metacritic-container img {
+    object-fit: contain;
+    max-width: 42px;
+  }
 }
 
-@media (max-width: 582px){
-   .rt-metacritic-container{
-      justify-content: space-between;
-      align-items: center;
-   }
-   .rt-container,.metacritic-container{
-      height: 100%!important;
-      flex-direction: column;
-      justify-content: space-between;
-      & > img{
-         margin-bottom: 6px;
-      }
-   }
+@media (max-width: 582px) {
+  .rt-metacritic-container {
+    width: 100% !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rt-container,
+  .metacritic-container {
+    width: 100% !important;
+    flex-direction: column;
+    // justify-content: space-around;
+    & > img {
+      margin-bottom: 16px;
+    }
+    & > span{
+      text-align: center;
+    }
+  }
 
 }
-
