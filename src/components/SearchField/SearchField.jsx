@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useCallback } from "react";
+import React, {useState,useEffect,useCallback } from "react";
 import {useHistory} from 'react-router-dom';
 // import ResultError from "../ResultError/ResultError";
 import { useDispatch } from "react-redux";
@@ -11,7 +11,7 @@ import { FiX } from "react-icons/fi";
 import "./SearchField.scss";
 const SearchField = () => {
   const history = useHistory();
-  const [typing, setTyping] = useState(true);
+  const typing = true;
   let iconStyles = { background: "transparent", fontSize: "1.3rem" };
   // initialize dispatch
   const dispatch = useDispatch();
