@@ -6,7 +6,6 @@ export const store = configureStore({
   reducer: {
    searchMovies : movieReducer,
    favMovies : favReducer,
-
   },
   composeWithDevTools
 })

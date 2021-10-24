@@ -1,7 +1,8 @@
 .movie-item {
   // height: 250px;
-
+  
   display: flex;
+  margin: auto;
   justify-content: center;
   flex-direction: column;
   background: transparent;
@@ -18,10 +19,7 @@
      display: flex;
      justify-content: space-between;
      color: #fff;
-     .remove-fav-btn{
-      //  display: block;
-       color: #fff;
-     }
+
   }
   .title {
     max-width: 100%;

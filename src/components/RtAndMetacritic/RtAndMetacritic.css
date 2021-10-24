@@ -1,0 +1,41 @@
+.rt-metacritic-container {
+  margin-top: 1rem;
+  display: flex;
+  color: #fff;
+}
+.rt-metacritic-container > * {
+  margin-right: 24px;
+}
+.rt-metacritic-container .rt-container, .rt-metacritic-container .metacritic-container {
+  display: flex;
+  align-items: center;
+}
+.rt-metacritic-container .rt-container > *, .rt-metacritic-container .metacritic-container > * {
+  margin-right: 12px;
+}
+.rt-metacritic-container .rt-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 83px;
+}
+.rt-metacritic-container .metacritic-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 42px;
+}
+
+@media (max-width: 582px) {
+  .rt-metacritic-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rt-container, .metacritic-container {
+    height: 100% !important;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .rt-container > img, .metacritic-container > img {
+    margin-bottom: 6px;
+  }
+}/*# sourceMappingURL=RtAndMetacritic.css.map */

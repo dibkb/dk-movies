@@ -1,0 +1,40 @@
+.imdb-rating {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.imdb-rating > * {
+  margin-right: 1.2rem;
+}
+.imdb-rating .imdbLogo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 4rem;
+}
+
+.rating-star-container > * {
+  margin-right: 4px;
+}
+
+.rating-vote {
+  align-self: center;
+}
+.rating-vote .rating {
+  color: #fff;
+  margin-right: 4px;
+}
+.rating-vote .votes {
+  color: #8a8a8a;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+@media (max-width: 582px) {
+  .imdb-rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .imdb-rating > * {
+    margin: 0.5rem 0;
+  }
+}/*# sourceMappingURL=imdbRating.css.map */

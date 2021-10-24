@@ -15,7 +15,7 @@ $text-grey: #8a8a8a;
       color: #fff;
     }
     .other-info {
-       margin-top: 1rem;
+      margin-top: 1rem;
       display: flex;
       justify-content: space-between;
       color: #fff;
@@ -26,14 +26,14 @@ $text-grey: #8a8a8a;
     .director,
     .actors,
     .plot {
-       margin-top: 1rem;
-       color: #fff;
+      margin-top: 1rem;
+      color: #fff;
       span {
         color: $text-grey;
       }
     }
-    .plot span{
-       line-height: 36px;
+    .plot span {
+      line-height: 36px;
     }
     .addtofav-btn {
       margin: 2rem 0;
@@ -45,15 +45,35 @@ $text-grey: #8a8a8a;
       background-color: #fff;
       cursor: pointer;
       border-radius: 9px;
-      &:hover{
-         transform: scale(1.06);
+      &:hover {
+        transform: scale(1.06);
       }
-      & span{
-         margin-left: 6px;
+      & span {
+        margin-left: 6px;
       }
-      & > *{
-         background: transparent;
+      & > * {
+        background: transparent;
       }
     }
   }
 }
+
+@media (max-width: 906px) {
+  .movie-page-container {
+    flex-direction: column;
+    .movie-poster {
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+    .movie-info {
+      .addtofav-btn {
+      padding: 1rem 2.1rem;
+        margin: 2rem auto;
+        // margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+// @media (max-width: 582px) {
+// }

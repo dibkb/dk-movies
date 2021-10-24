@@ -12,14 +12,43 @@
 }
 
 .brand {
+  color: #fff;
   font-size: 1.125rem;
   margin-left: 12px;
 }
 
-.right-side .home-link {
+.right-side {
+  display: flex;
+}
+.right-side .home-link, .right-side .fav-link {
   color: #fff;
   font-size: 1.125rem;
 }
-.right-side .home-link:hover {
+.right-side .home-link:hover, .right-side .fav-link:hover {
   transform: scale(1.04);
+}
+.right-side .home-link {
+  margin-right: 2rem;
+}
+.right-side .fav-link {
+  display: flex;
+  align-items: center;
+}
+.right-side .fav-link span {
+  margin-left: 0.3rem;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+  .navbar-container .search-container {
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+  .navbar-container .right-side {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

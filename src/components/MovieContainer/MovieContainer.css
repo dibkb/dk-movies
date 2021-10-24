@@ -3,6 +3,15 @@
   display: grid;
   -moz-column-gap: 24px;
        column-gap: 24px;
+  align-items: center;
+  /* left and right */
+  justify-content: center;
+  /* up and down */
   row-gap: 48px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, calc(25% - 24px)));
+}
+@media (max-width: 575.98px) {
+  .movie-container {
+    display: block;
+  }
 }/*# sourceMappingURL=MovieContainer.css.map */

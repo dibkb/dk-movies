@@ -1,0 +1,72 @@
+.movie-page-container {
+  margin-top: 16px;
+  display: flex;
+}
+.movie-page-container .movie-poster {
+  margin-right: 2rem;
+}
+.movie-page-container .movie-poster img {
+  border: 1px solid #fff;
+}
+.movie-page-container .movie-info .title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.movie-page-container .movie-info .other-info {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.movie-page-container .movie-info .other-info span {
+  color: #8a8a8a;
+}
+.movie-page-container .movie-info .director,
+.movie-page-container .movie-info .actors,
+.movie-page-container .movie-info .plot {
+  margin-top: 1rem;
+  color: #fff;
+}
+.movie-page-container .movie-info .director span,
+.movie-page-container .movie-info .actors span,
+.movie-page-container .movie-info .plot span {
+  color: #8a8a8a;
+}
+.movie-page-container .movie-info .plot span {
+  line-height: 36px;
+}
+.movie-page-container .movie-info .addtofav-btn {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0.6rem 1.8rem;
+  font-size: 18px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 9px;
+}
+.movie-page-container .movie-info .addtofav-btn:hover {
+  transform: scale(1.06);
+}
+.movie-page-container .movie-info .addtofav-btn span {
+  margin-left: 6px;
+}
+.movie-page-container .movie-info .addtofav-btn > * {
+  background: transparent;
+}
+
+@media (max-width: 906px) {
+  .movie-page-container {
+    flex-direction: column;
+  }
+  .movie-page-container .movie-poster {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .movie-page-container .movie-info .addtofav-btn {
+    padding: 1rem 2.1rem;
+    margin: 2rem auto;
+  }
+}/*# sourceMappingURL=MoviePge.css.map */

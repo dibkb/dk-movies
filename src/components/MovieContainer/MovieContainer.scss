@@ -1,9 +1,19 @@
-.movie-container{
-   margin: 2rem 0;
-   display: grid;
-   column-gap: 24px;
-   row-gap: 48px;
-   grid-template-columns: repeat(auto-fit, minmax(300px, calc(25% - 24px)));
+// .movie-container-wrapper{
+//    width: 100%;
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+// }
+.movie-container {
+  margin: 2rem 0;
+  display: grid;
+  column-gap: 24px;
+  align-items: center; /* left and right */
+  justify-content: center; /* up and down */
+  row-gap: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, calc(25% - 24px)));
 
-
+  @media (max-width: 575.98px) {
+    display: block;
+  }
 }

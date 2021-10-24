@@ -9,7 +9,7 @@ const SearchField = () => {
   let iconStyles = { background: "transparent", fontSize: "1.3rem" };
   // initialize dispatch
   const dispatch = useDispatch();
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("Pirates");
   const searchHandler = (e) => {
     e.preventDefault();
     setSearch("");

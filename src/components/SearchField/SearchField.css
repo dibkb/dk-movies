@@ -10,13 +10,21 @@ button {
   padding: 0.69rem 2.7rem;
   border-radius: 12px;
 }
+@media (max-width: 575.98px) {
+  .search-form {
+    width: 100%;
+    padding: 0.69rem 1rem;
+  }
+}
 .search-form .search-icon {
   margin-right: 1.3rem;
+  color: #fff;
 }
 .search-form input {
   border: none;
   background: transparent;
   font-size: 1.125rem;
+  color: #fff;
 }
 .search-form input::-moz-placeholder {
   font-size: 1.125rem;
